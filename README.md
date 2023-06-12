@@ -53,7 +53,7 @@ Read our [contributing guide](CONTRIBUTING.md) to learn about our development pr
 
 ### Development
 
-If you want to actively help Trend Vision One by creating connectors, we created a [dedicated documentation](https://docs.trendmicro.com/en-us/enterprise/trend-micro-xdr-help/Home) about the deployment of a development environment and how to start.
+If you want to actively help Trend Vision One by creating connectors, we created [dedicated documentation](https://docs.trendmicro.com/en-us/enterprise/trend-micro-xdr-help/Home) about the deployment of a development environment and how to start.
 
 ## Community
 
