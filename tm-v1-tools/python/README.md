@@ -21,7 +21,7 @@ Trend Vision One™ [Python library (pytmv1)](https://pypi.org/project/pytmv1/)
 
 ### Usage
 
-----
+```python
 import pytmv1
 client = pytmv1.client("MyApplication", "Token", "https://api.xdr.trendmicro.com")
 result = client.get_exception_list()
@@ -39,7 +39,7 @@ GetExceptionListResp(
 )
 result.result_code
 ResultCode.SUCCESS
-----
+```
 
 ### Build the project
 ### Install dependencies
@@ -63,6 +63,7 @@ ResultCode.SUCCESS
 #### Supported APIs
 
 | Python	| Vision One |
+| --------| --------- |
 | Connectivity	| |
 | `test_connectivity` |	Check availability of service |
 | Common	| |
