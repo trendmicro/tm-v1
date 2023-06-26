@@ -114,7 +114,7 @@ ResultCode.SUCCESS
 Thank you for your interest in this project, please make sure to read the contribution guide.
 
 ## Code of conduct
-See Code of conduct.
+See [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 Project distributed under the [Apache 2.0](https://spdx.org/licenses/Apache-2.0.html) license.
