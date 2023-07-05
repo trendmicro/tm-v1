@@ -27,7 +27,7 @@ Now that the project has been released, our goal for the future is two-fold:
 
 ## Code of Conduct
 
-Trend Vision One has adopted a Code of Conduct that we expect project participants to adhere to. Please read the [full text](https://github.com/AmbientPlatypus/AmbientPlatypus/blob/main/CODE_OF_CONDUCT.md) so that you can understand which actions are and are not tolerated.
+Trend Vision One has adopted a Code of Conduct that we expect project participants to adhere to. Please read the [full text](https://github.com/trendmicro/tm-v1/blob/main/CODE_OF_CONDUCT.md) so that you can understand which actions are and are not tolerated.
 
 
 ## How can you contribute?
