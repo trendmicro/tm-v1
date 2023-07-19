@@ -13,4 +13,4 @@ Just like a calculator aids students, scientists, and statistical analysts in pe
 
 ## Documentation
 
-<<Place example here>>
+Documentation forthcoming
