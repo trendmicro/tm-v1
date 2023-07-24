@@ -50,4 +50,4 @@ You can open an issue on the repository with the label "question" for general su
 
 ### How can you get in touch for other questions?
 
-If you need support or want to discuss the Trend Vision One OSS platform, please join us on our [forums](https://success.trendmicro.com/forum/s/topic/0TO4T000000LH90WAG/trend-micro-vision-one). You can also send us an [email](mailto:emailaddress@trendmicro.com).
+If you need support or want to discuss the Trend Vision One OSS platform, please join us on our [forums](https://success.trendmicro.com/forum/s/topic/0TO4T000000LH90WAG/trend-micro-vision-one).

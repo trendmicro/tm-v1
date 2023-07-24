@@ -4,4 +4,4 @@ Trend Vision One™ custom scripts -- Verbiage here.
 
 ## Documentation
 
-<<Place example here>>
+Documentation will be updated upon release.

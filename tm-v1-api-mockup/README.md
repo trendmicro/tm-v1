@@ -4,4 +4,4 @@ Trend Vision One™ Mock API provides you with the ability to test your API comm
 
 ## Documentation
 
-<<Place example here>>
+Documentation will be updated upon release.
