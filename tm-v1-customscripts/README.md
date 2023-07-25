@@ -1,6 +1,6 @@
 ## Introduction
 
-Trend Vision One™ custom scripts -- Verbiage here.
+Trend Vision One™ custom scripts
 
 ## Documentation
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-Trend Vision One™ openCTI connector -- Verbiage here.
+Trend Vision One™ openCTI connector
 
 ## Documentation
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-Trend Vision One™ connector template -- Verbiage here.
+Trend Vision One™ connector template
 
 ## Documentation
 

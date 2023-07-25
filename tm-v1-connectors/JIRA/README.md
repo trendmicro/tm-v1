@@ -1,6 +1,6 @@
 ## Introduction
 
-Trend Vision One™ JIRA connector -- Verbiage here.
+Trend Vision One™ JIRA connector
 
 ## Documentation
 

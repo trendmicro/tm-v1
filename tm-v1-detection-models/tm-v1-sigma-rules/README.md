@@ -1,6 +1,6 @@
 ## Introduction
 
-Trend Vision One™ Sigma Rules -- Verbiage here.
+Trend Vision One™ Sigma Rules
 
 ## Documentation
 

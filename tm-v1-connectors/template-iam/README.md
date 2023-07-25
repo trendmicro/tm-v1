@@ -1,6 +1,6 @@
 ## Introduction
 
-Trend Vision One™ IAM connector -- Verbiage here.
+Trend Vision One™ IAM connector
 
 ## Documentation
 

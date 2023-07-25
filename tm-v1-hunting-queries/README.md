@@ -1,6 +1,6 @@
 ## Introduction
 
-Trend Vision One™ threat hunting queries -- Verbiage here.
+Trend Vision One™ threat hunting queries
 
 ## Documentation
 
