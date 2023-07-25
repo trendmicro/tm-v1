@@ -2,6 +2,8 @@
 
 Trend Vision One™ [Python library (pytmv1)](https://pypi.org/project/pytmv1/)
 
+Please see the link above to download and see the most current documentation.
+
 ## Configuration
 
 | Parameter   | Description |
