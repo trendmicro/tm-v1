@@ -1,0 +1,21 @@
+title: Possible ICMP Backdoor via Powershell
+id: 4472011c-31f9-489b-a647-94a5f0c3fdb1
+description: A possible backdoor utilizing the Internet Control Message Protocol (ICMP) using Powershell was found.
+author: Trend Micro
+references:
+    - https://attack.mitre.org/techniques/T1095/
+date: 2021/11/14
+tags:
+    - attack.t1095
+logsource:
+    product: windows
+    definition: TELEMETRY_PROCESS
+detection:
+    subid:
+        eventSubId: TELEMETRY_PROCESS_CREATE
+    selection1:
+        objectCmd: '*New-Object System.Net.NetworkInformation.Ping).Send*'
+    selection2:
+        objectCmd: '*New-Object Net.NetworkInformation.Ping).Send*'
+    condition: subid and (selection1 or selection2)
+level: medium

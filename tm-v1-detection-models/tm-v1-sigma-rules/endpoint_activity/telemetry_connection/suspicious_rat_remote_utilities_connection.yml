@@ -1,0 +1,24 @@
+title: Suspicious RAT (Remote Utilities) Connection
+id: 52d8499a-8429-4258-b857-2300b4af7a83
+description: A connection from Remote Utilities might have been attempted, which could be abused by attacker for remote access to victim environment.
+references:
+    - https://attack.mitre.org/techniques/T1219/
+author: Trend Micro
+date: 2022/05/25
+tags:
+    - attack.t1219
+logsource:
+    product: windows
+    definition: TELEMETRY_CONNECTION
+detection:
+    eventSub:
+        eventSubId:
+            - TELEMETRY_CONNECTION_CONNECT_OUTBOUND
+            - TELEMETRY_CONNECTION_CONNECT_INBOUND
+    selection:
+        dpt:
+            - 5650
+            - 5655
+        processCmd: '*-run_agent*'
+    condition: eventSub and selection
+level: medium

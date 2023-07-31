@@ -1,0 +1,22 @@
+title: Tor Client DNS Query
+id: 9e4a6077-1327-4895-8458-f4c1655b2e28
+description: A Tor client sent a DNS query.
+references:
+    - https://attack.mitre.org/techniques/T1090/003/
+author: Trend Micro
+date: 2022/01/13
+tags:
+    - mitre.t1090.003
+logsource:
+    product: windows
+    definition: TELEMETRY_DNS
+detection:
+    selection:
+        eventSubId: TELEMETRY_DNS_QUERY
+    detection:
+        processCmd:
+            - '*\tor.exe'
+            - '*\meek.exe'
+            - '*\meek-client.exe'
+    condition: selection and detection
+level: medium

@@ -1,0 +1,27 @@
+title: Suspicious Connection of Rundll32 Executed by MS Office
+id: 01f6b626-f9f1-4a88-8d72-bcb5e434751c
+description: A rundll32.exe instance executed by MS Office connected to the internet.
+author: Trend Micro
+references:
+    - https://attack.mitre.org/techniques/T1218/011
+date: 2023/05/05
+tags:
+    - attack.t1218.011
+logsource:
+    product: windows
+    definition: TELEMETRY_INTERNET
+detection:
+    eventSub:
+        eventSubId:
+            - TELEMETRY_INTERNET_OPEN
+            - TELEMETRY_INTERNET_CONNECT
+            - TELEMETRY_INTERNET_DOWNLOAD
+    selection1:
+        parentFilePath:
+            - '*\winword.exe'
+            - '*\excel.exe'
+            - '*\powerpnt.exe'   
+    selection2:
+        processCmd: '*\rundll32.exe'
+    condition: eventSub and selection1 and selection2
+level: medium

@@ -1,0 +1,29 @@
+title: Renamed Windows Script Host Execution
+id: 51cc11b8-e09e-443c-874a-44501b39be55
+description: A VBScript or JavaScript command was executed by a renamed wscript.exe or cscript.exe.
+references:
+    - https://attack.mitre.org/techniques/T1059/007/
+    - https://attack.mitre.org/techniques/T1059/005/
+    - https://attack.mitre.org/techniques/T1036/003/
+author: Trend Micro
+date: 2022/05/04
+tags:
+    - attack.t1059.005
+    - attack.t1036.003
+    - attack.t1059.007
+logsource:
+    product: windows
+    definition: TELEMETRY_PROCESS
+detection:
+    eventSub:
+        eventSubId: TELEMETRY_PROCESS_CREATE
+    scriptcmd:
+        objectCmd:
+            - '*e:jscript*'
+            - '*e:vbscript*'
+    renamed:
+        objectCmd:
+            - '*wscript*'
+            - '*cscript*'
+    condition: eventSub and scriptcmd and not renamed
+level: medium

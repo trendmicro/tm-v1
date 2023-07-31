@@ -1,0 +1,32 @@
+title: Identified Potential Outbound Network Activity To Cryptocurrency Mining Pool
+id: 1941a393-902f-4a29-b803-4e4f59c9ecff
+description: Adversaries may gain an initial foothold on vulnerable systems by abusing security misconfigurations and unpatched vulnerabilities and hijack system resources to mine cryptocurrency.
+references:
+    - https://attack.mitre.org/techniques/T1496/
+author: Trend Micro
+date: 2021/10/28
+tags:
+    - attack.t1496
+logsource:
+    definition: TELEMETRY_DNS
+detection:
+    s1:
+        eventSubId: TELEMETRY_DNS_QUERY
+    s2:
+        hostName:
+            - '*minergate*'
+            - '*minexmr*'
+            - '*supportxmr*'
+            - '*monerohash*'
+            - '*xmrpool*'
+            - '*xmr.*'
+            - '*nanopool*'
+            - '*monero*'
+            - '*c3pool*'
+            - '*2miners*'
+            - '*hashcity.org*'
+            - '*exposedbotnets.ru'
+            - '*pwndns.pw'
+            - '*htxreceive.top'
+    condition: s1 and s2
+level: low

@@ -1,0 +1,24 @@
+title: Component Object Model Hijacking
+id: 88d753a3-61de-46d5-8501-063430ea0a66
+description: A registry entry for a Component Object Model (COM) object known to be prone to hijacking was created or modified.
+references:
+    - https://attack.mitre.org/techniques/T1122/
+author: Trend Micro
+date: 2020/02/04
+tags:
+    - attack.t1112
+    - attack.t1546.015
+logsource:
+    product: windows
+    definition: TELEMETRY_REGISTRY
+detection:
+    eventSub:
+        eventSubId: TELEMETRY_REGISTRY_SET
+    selection:
+        objectRegistryKeyHandle:
+            - '*\{00000001-0000-0000-0000-0000feedacdc}*'
+            - '*\{c947d50f-378e-4ff6-8835-fcb50305244d}\localserver32*'
+            - '*\{372fce38-4324-11d0-8810-00a0c903b83c}\treatas*'
+            - '*\{97d47d56-3777-49fb-8e8f-90d7e30e1a1e}\treatas*'
+    condition: eventSub and selection
+level: medium

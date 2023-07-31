@@ -1,0 +1,29 @@
+title: Drops AMSI File in PowerShell Path
+id: 68707f8a-6c6d-4c6f-a172-491d1a110ef8
+description: An amsi.dll file was dropped in the normal PowerShell path.
+references:
+    - https://attack.mitre.org/techniques/T1562/001/
+    - https://attack.mitre.org/techniques/T1036/005/
+    - https://attack.mitre.org/techniques/T1574/001/
+author: Trend Micro
+date: 2021/04/13
+tags:
+    - attack.t1562.001
+    - attack.t1036.005
+    - attack.t1574.001
+logsource:
+    product: windows
+    definition: TELEMETRY_FILE
+detection:
+    subid:
+        eventSubId:
+            - TELEMETRY_FILE_CREATE
+            - TELEMETRY_FILE_COPY
+            - TELEMETRY_FILE_MOVE
+            - TELEMETRY_FILE_MODIFY
+    amsi:
+        objectFilePath: '*\amsi.dll'
+    path:
+        objectFilePath: '*\System32\WindowsPowerShell\\*'
+    condition: subid and amsi and path
+level: medium

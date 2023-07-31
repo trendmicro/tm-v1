@@ -1,0 +1,21 @@
+title: Computer Name Discovery via PowerShell - Windows Event Log
+id: d629c1bc-0673-495e-8549-d97afa99bf0d
+description: PowerShell discovered the computer name using the API GetComputerName.
+references:
+    - https://attack.mitre.org/techniques/T1082/
+author: Trend Micro
+date: 2020/11/18
+tags:
+    - attack.t1082
+logsource:
+    product: windows
+    definition: TELEMETRY_WINDOWS_EVENT
+detection:
+    selection:
+        winEventId: 4104
+    scriptBlock:
+        rawDataStr:
+            - '*GetComputerName*'
+            - '*GetComputerNameEx*'
+    condition: all of them
+level: low

@@ -1,0 +1,23 @@
+title: Abnormal Network Connection of Notepad
+id: ef27d70a-e4d8-4191-abb4-7c16739069eb
+description: Notepad was found to be connecting to a network.
+author: Trend Micro
+references:
+    - https://attack.mitre.org/techniques/T1055/
+date: 2021/04/01
+tags:
+    - attack.t1055
+logsource:
+    product: windows
+    definition: TELEMETRY_INTERNET
+detection:
+    eventSub:
+        eventSubId: TELEMETRY_INTERNET_CONNECT
+    parent_path:
+        parentFilePath: '*\explorer.exe'
+    process_path:
+        processFilePath: '*\notepad.exe'
+    empty_request:
+        request: null
+    condition: eventSub and process_path and not parent_path and not empty_request
+level: medium

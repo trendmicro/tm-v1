@@ -1,0 +1,22 @@
+title: Mutex Creation via PowerShell
+id: bca91fcc-a671-4439-bbe9-13f1d84e4d87
+description: A mutex instance was created via PowerShell.
+references:
+    - https://attack.mitre.org/techniques/T1059/001/
+author: Trend Micro
+date: 2022/09/09
+tags:
+    - attack.t1059.001
+logsource:
+    product: windows
+    definition: TELEMETRY_AMSI
+detection:
+    selection:
+        eventSubId: TELEMETRY_AMSI_EXECUTE
+        objectAppName: '*PowerShell*'
+    selection1:
+        objectRawDataStr: '*New-Object*'
+    selection2:
+        objectRawDataStr: '*System.Threading.Mutex*'
+    condition: all of them
+level: informational

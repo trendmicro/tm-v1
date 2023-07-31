@@ -1,0 +1,28 @@
+title: CMSTP in Autorun Registry
+id: e5eee535-7cef-4d00-978b-f6965575a4d8
+description: A suspicious registry entry containing cmstp.exe was created.
+author: Trend Micro
+references:
+    - https://attack.mitre.org/techniques/T1191/
+    - https://attack.mitre.org/techniques/T1060/
+date: 2019/11/28
+tags:
+    - attack.t1218.003
+    - attack.t1218
+    - attack.t1112
+    - attack.t1547.001
+logsource:
+    product: windows
+    definition: TELEMETRY_REGISTRY
+detection:
+    selection:
+        eventSubId: TELEMETRY_REGISTRY_SET
+        objectRegistryData:
+            - '*cmstp.exe *'
+            - '*cmstp *'
+    parameter:
+        objectRegistryData:
+            - '* /s *'
+            - '* -s *'
+    condition: selection and parameter
+level: medium
