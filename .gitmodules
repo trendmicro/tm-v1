@@ -16,3 +16,6 @@
 [submodule "tm-v1-hunting-queries"]
 	path = tm-v1-hunting-queries
 	url = https://github.com/trendmicro/tm-v1-hunting-queries.git
+[submodule "tm-v1-playbooks"]
+	path = tm-v1-playbooks
+	url = https://github.com/trendmicro/tm-v1-playbooks.git
