@@ -7,3 +7,6 @@
 [submodule "tm-v1-connectors"]
 	path = tm-v1-connectors
 	url = https://github.com/trendmicro/tm-v1-connectors.git
+[submodule "tm-v1-customscripts"]
+	path = tm-v1-customscripts
+	url = https://github.com/trendmicro/tm-v1-customscripts.git
