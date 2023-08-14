@@ -1,0 +1,3 @@
+[submodule "tm-v1-aicompanion-prompts"]
+	path = tm-v1-aicompanion-prompts
+	url = https://github.com/trendmicro/tm-v1-aicompanion-prompts.git
