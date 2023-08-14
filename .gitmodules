@@ -10,3 +10,6 @@
 [submodule "tm-v1-customscripts"]
 	path = tm-v1-customscripts
 	url = https://github.com/trendmicro/tm-v1-customscripts.git
+[submodule "tm-v1-detection-models"]
+	path = tm-v1-detection-models
+	url = https://github.com/trendmicro/tm-v1-detection-models.git
