@@ -13,3 +13,6 @@
 [submodule "tm-v1-detection-models"]
 	path = tm-v1-detection-models
 	url = https://github.com/trendmicro/tm-v1-detection-models.git
+[submodule "tm-v1-hunting-queries"]
+	path = tm-v1-hunting-queries
+	url = https://github.com/trendmicro/tm-v1-hunting-queries.git
