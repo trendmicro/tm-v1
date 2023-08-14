@@ -19,3 +19,6 @@
 [submodule "tm-v1-playbooks"]
 	path = tm-v1-playbooks
 	url = https://github.com/trendmicro/tm-v1-playbooks.git
+[submodule "tm-v1-tools"]
+	path = tm-v1-tools
+	url = https://github.com/trendmicro/tm-v1-tools.git
