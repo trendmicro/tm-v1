@@ -22,3 +22,6 @@
 [submodule "tm-v1-tools"]
 	path = tm-v1-tools
 	url = https://github.com/trendmicro/tm-v1-tools.git
+[submodule "tm-v1-schema"]
+	path = tm-v1-schema
+	url = https://github.com/trendmicro/tm-v1-schema.git
