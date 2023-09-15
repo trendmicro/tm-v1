@@ -34,3 +34,7 @@
 	path = tm-v1-schema
 	url = https://github.com/trendmicro/tm-v1-schema.git
 	branch = master
+[submodule "tm-v1-containersecurity"]
+	path = tm-v1-containersecurity
+	url = https://github.com/trendmicro/tm-v1-containersecurity.git
+	branch = main
