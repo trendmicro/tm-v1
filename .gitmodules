@@ -1,27 +1,36 @@
 [submodule "tm-v1-aicompanion-prompts"]
 	path = tm-v1-aicompanion-prompts
 	url = https://github.com/trendmicro/tm-v1-aicompanion-prompts.git
+	branch = main
 [submodule "tm-v1-api-mockup"]
 	path = tm-v1-api-mockup
 	url = https://github.com/trendmicro/tm-v1-api-mockup.git
+	branch = main
 [submodule "tm-v1-connectors"]
 	path = tm-v1-connectors
 	url = https://github.com/trendmicro/tm-v1-connectors.git
+	branch = main
 [submodule "tm-v1-customscripts"]
 	path = tm-v1-customscripts
 	url = https://github.com/trendmicro/tm-v1-customscripts.git
+	branch = main
 [submodule "tm-v1-detection-models"]
 	path = tm-v1-detection-models
 	url = https://github.com/trendmicro/tm-v1-detection-models.git
+	branch = main
 [submodule "tm-v1-hunting-queries"]
 	path = tm-v1-hunting-queries
 	url = https://github.com/trendmicro/tm-v1-hunting-queries.git
+	branch = main
 [submodule "tm-v1-playbooks"]
 	path = tm-v1-playbooks
 	url = https://github.com/trendmicro/tm-v1-playbooks.git
+	branch = main
 [submodule "tm-v1-tools"]
 	path = tm-v1-tools
 	url = https://github.com/trendmicro/tm-v1-tools.git
+	branch = main
 [submodule "tm-v1-schema"]
 	path = tm-v1-schema
 	url = https://github.com/trendmicro/tm-v1-schema.git
+	branch = master
