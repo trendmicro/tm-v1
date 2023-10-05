@@ -35,7 +35,7 @@ If you want to know more on Trend Vision One, you can read the [documentation on
 
 ## Releases download
 
-The Trend Vision One connectors are available on the [Github releases page](https://github.com/trendmicro/tm-v1/tm-v1-connectors).
+The Trend Vision One connectors are available on the [Connectors releases page](https://github.com/trendmicro/tm-v1/tm-v1-connectors).
 
 ## Installation
 
@@ -45,21 +45,17 @@ Each connectors documentation can be found in the associated repository. We also
 
 ### Code of Conduct
 
-Trend Micro has adopted a [Code of Conduct](CODE_OF_CONDUCT.md) that we expect project participants to adhere to. Please read the [full text](CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+Trend Micro has adopted a [Code of Conduct](CODE_OF_CONDUCT.md) that we expect project participants to adhere to. Please read the [full text](CODE_OF_CONDUCT.md) to understand what actions will and will not be tolerated.
 
 ### Contributing Guide
 
 Read our [contributing guide](CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to Trend Vision One.
 
-### Development
-
-If you want to actively help Trend Vision One by creating connectors, we created [dedicated documentation](https://docs.trendmicro.com/en-us/enterprise/trend-micro-xdr-help/Home) about the deployment of a development environment and how to start.
-
 ## Community
 
 ### Status & bugs
 
-Currently Trend Vision One connectors is under heavy development, if you wish to report bugs or ask for new features, you can directly use the [Github issues module](https://github.com/trendmicro/tm-v1/tm-v1-connectors/issues).
+Currently Trend Vision One GitHub is under heavy development. If you wish to report bugs or request new features, you can use the [Github issues module](https://github.com/trendmicro/tm-v1/tm-v1-connectors/issues).
 
 ### Discussion
 
@@ -67,7 +63,7 @@ If you need support or you wish to engage a discussion about the Trend Vision On
 
 ### Support
 
-The supports will be provided through the community. As this is an OSS project but not a formal Trend Micro product, the formal product support is not applied.
+Supports will be provided through the community. As this is an OSS project but not a formal Trend Micro product, formal product support is not applied.
 
 ## About
 
