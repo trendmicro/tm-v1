@@ -38,3 +38,6 @@
 	path = tm-v1-containersecurity
 	url = https://github.com/trendmicro/tm-v1-containersecurity.git
 	branch = main
+[submodule "tm-v1-api-cookbook"]
+	path = tm-v1-api-cookbook
+	url = https://github.com/trendmicro/tm-v1-api-cookbook.git
