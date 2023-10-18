@@ -15,7 +15,7 @@
 
 ## Introduction
 
-Trend Vision One open-source integrations will allow organizations to seamlessly integrate their security tools. Our Trend Vision One platform is an enterprise solution that integrates most of our enterprise products under one console and one API. Integrating with the platform once, gives you access to the multiple products that make up the platform.
+Trend Vision One open-source integrations will allow organizations to integrate their security tools seamlessly. Our Trend Vision One platform is an enterprise solution that integrates most of our enterprise products under one console and one API. Integrating with the platform once gives you access to the multiple products that make up the platform.
 
 We hope to provide you with all the tools you need to expand the Trend Vision One Ecosystem with your custom connector(s) or tool(s).
 
@@ -49,13 +49,13 @@ Trend Micro has adopted a [Code of Conduct](CODE_OF_CONDUCT.md) that we expect p
 
 ### Contributing Guide
 
-Read our [contributing guide](CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to Trend Vision One.
+Read our [contributing guide](CONTRIBUTING.md) to learn about our development process, how to propose bug fixes and improvements, and how to build and test your changes to Trend Vision One.
 
 ## Community
 
 ### Status & bugs
 
-Currently Trend Vision One GitHub is under heavy development. If you wish to report bugs or request new features, you can use the [Github issues module](https://github.com/trendmicro/tm-v1/tm-v1-connectors/issues).
+Currently Trend Vision One GitHub is under heavy development. Use the GitHub issues module within each submodule/repository to report bugs or request new features.
 
 ### Discussion
 
@@ -63,7 +63,7 @@ If you need support or you wish to engage a discussion about the Trend Vision On
 
 ### Support
 
-Supports will be provided through the community. As this is an OSS project but not a formal Trend Micro product, formal product support is not applied.
+Support will be provided through the community. This is an OSS project and not a formal Trend Micro product, so formal product support is not applied.
 
 ## About
 
