@@ -59,7 +59,7 @@ Currently Trend Vision One GitHub is under heavy development. Use the GitHub iss
 
 ### Discussion
 
-If you need support or you wish to engage a discussion about the Trend Vision One platform, feel free to join us on our [Forums](https://success.trendmicro.com/forum/s/topic/0TO4T000000LH90WAG/trend-micro-vision-one).
+If you need support on any of our licesned products or you wish to engage a discussion about the Trend Vision One platform, feel free to join us on our [Forums](https://success.trendmicro.com/forum/s/topic/0TO4T000000LH90WAG/trend-micro-vision-one).
 
 ### Support
 
