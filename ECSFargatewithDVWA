@@ -1,0 +1,83 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "ECSCluster": {
+            "Type": "AWS::ECS::Cluster",
+            "Properties": {
+                "ClusterName": "MyDemoCluster"
+            }
+        },
+        "myLogGroup": {
+    "Type": "AWS::Logs::LogGroup",
+    "Properties": {
+        "LogGroupName": "MyDemoCluster",
+        "RetentionInDays": 7
+    }
+},
+        "ECSTaskDefinition": {
+            "Type": "AWS::ECS::TaskDefinition",
+            "Properties": {
+                "ContainerDefinitions": [
+                    {
+                        "EntryPoint": [
+                        ],
+                        "Essential": true,
+                        "Image": "<YOUR URI FOR YOUR IMAGE>",
+                        "LogConfiguration": {
+                            "LogDriver": "awslogs",
+                            "Options": {
+                                "awslogs-group": "MyDemoCluster",
+                                "awslogs-region": "us-east-1",
+                                "awslogs-stream-prefix": "ecs"
+                            }
+                        },
+                        "Name": "sample-fargate-app",
+                        "PortMappings": [
+                            {
+                                "ContainerPort": 80,
+                                "HostPort": 80,
+                                "Protocol": "tcp"
+                            }
+                        ]
+                    }
+                ],
+                "Cpu": 256,
+                "ExecutionRoleArn": "<ARN FOR YOUR EXECUTION ROLE>",
+                "Family": "task-definition-cfn",
+                "Memory": 512,
+                "NetworkMode": "awsvpc",
+                "RequiresCompatibilities": [
+                    "FARGATE"
+                ],
+                "RuntimePlatform": {
+                    "OperatingSystemFamily": "LINUX"
+                }
+            }
+        },
+        "ECSService": {
+            "Type": "AWS::ECS::Service",
+            "Properties": {
+                "ServiceName": "cfn-service",
+                "Cluster": {
+                    "Ref": "ECSCluster"
+                },
+                "DesiredCount": 1,
+                "LaunchType": "FARGATE",
+                "NetworkConfiguration": {
+                    "AwsvpcConfiguration": {
+                        "AssignPublicIp": "ENABLED",
+                        "SecurityGroups": [
+                            "<YOUR SECURITY GROUP ID"
+                        ],
+                        "Subnets": [
+                            "<YOUR SUBNET ID>"
+                        ]
+                    }
+                },
+                "TaskDefinition": {
+                    "Ref": "ECSTaskDefinition"
+                }
+            }
+        }
+    }
+}        
