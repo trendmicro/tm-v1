@@ -25,6 +25,22 @@ We will also share other types of Trend Vision One integrations or code. Custom 
 
 ![Workbench](https://i.imgur.com/D3joB6x.jpg "Workbench")
 
+## Contents
+
+| Submodule                 | Purpose                                                                      |
+| -----------               | -----------                                                                  |
+| tm-v1-aicompanion-prompts | Queries for use with Companion                                               |
+| tm-v1-api-cookbook        | Sample code for use with the Vision One API                                  |
+| tm-v1-api-mockup          | Mock API server to test your sample code against                             |
+| tm-v1-connectors          | Vision One Third-Party connectors and sample framework for building your own |
+| tm-v1-containersecurity   | Vision One Container Security sample code for deploying and testing          |
+| tm-v1-customscripts       | Sample scripts for use within Vision One Remote Scripts                      |
+| tm-v1-detection-models    | YAML detection models for use within Vision One                              |
+| tm-v1-hunting-queries     | Sample search queries for use within Vision One when hunting threats         |
+| tm-v1-playbooks           | Playbook examples and sample framework for custom builds                     |
+| tm-v1-schema              | Vision One search log schema for use in reporting or third-party builds      |
+| tm-v1-tools               | Tools for use with Vision One                                                |
+
 ## Objective
 
 This Trend Vision One community aims to provide users and partners with a comprehensive toolset to help you use Trend Vision One in your environment with your Ecosystem.
