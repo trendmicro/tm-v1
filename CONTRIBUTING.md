@@ -23,6 +23,7 @@ Whether you are an organization or an individual working or studying cybersecuri
 Now that the project has been released, our goal for the future is two-fold:
 
 * Of course, fixing bugs and developing features identified as non-critical would add to Trend Vision One's power.
+* Provide quality open-source enhancements to customers Vision One experiences
 
 
 ## Code of Conduct
@@ -47,6 +48,8 @@ You can open an issue on the repository with the label "question" for general su
   * frontend
   * worker
   * doc
+
+* <strong>*** ALL COMMITS MUST BE SIGNED ***</strong> This is to ensure that we can validate and ensure quality for our customers.
 
 ### How can you get in touch for other questions?
 
