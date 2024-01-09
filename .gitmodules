@@ -41,3 +41,6 @@
 [submodule "tm-v1-api-cookbook"]
 	path = tm-v1-api-cookbook
 	url = https://github.com/trendmicro/tm-v1-api-cookbook.git
+[submodule "tm-v1-pytv1"]
+	path = tm-v1-pytv1
+	url = https://github.com/trendmicro/tm-v1-pytv1
