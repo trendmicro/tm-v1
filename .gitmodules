@@ -46,3 +46,6 @@
 	path = tm-v1-pytv1
 	url = https://github.com/trendmicro/tm-v1-pytv1
 	branch = main
+[submodule "tm-v1-filesecurity"]
+	path = tm-v1-filesecurity
+	url = https://github.com/trendmicro/tm-v1-filesecurity.git
