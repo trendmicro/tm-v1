@@ -46,3 +46,6 @@
 	path = tm-v1-filesecurity
 	url = https://github.com/trendmicro/tm-v1-filesecurity.git
 	branch = main
+[submodule "tm-v1-schema"]
+	path = tm-v1-schema
+	url = https://github.com/trendmicro/tm-v1-schema.git
