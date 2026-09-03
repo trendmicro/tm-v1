@@ -49,7 +49,30 @@ You can open an issue on the repository with the label "question" for general su
   * worker
   * doc
 
-* <strong>*** ALL COMMITS MUST BE SIGNED ***</strong> This is to ensure that we can validate and ensure quality for our customers.
+### Commit signing requirement
+
+All commits to this repository must be cryptographically signed. This is a firm requirement; unsigned commits cannot be merged regardless of review status.
+
+Signing your commits tells us the code came from who it says it did, which is important for a security-focused project and required by Trend Micro's open-source contribution policy.
+
+Setting up commit signing
+
+GitHub supports two signing methods: GPG keys and SSH keys. Either works.
+
+* GPG signing: [follow GitHub's guide to generating a GPG key and configuring Git to use it](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key).
+* SSH signing: [follow GitHub's guide to signing commits with your SSH key](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification).
+
+Once configured, every commit you make will be signed automatically. You can verify this worked by running:
+
+```bash
+git log --show-signature -1
+```
+
+If you open a PR and see a message indicating your commits cannot be merged, the most likely cause is unsigned commits. Rebase your branch with signed commits before requesting review:
+
+```bash
+git rebase --exec 'git commit --amend --no-edit -S' origin/main
+```
 
 ### How can you get in touch for other questions?
 
